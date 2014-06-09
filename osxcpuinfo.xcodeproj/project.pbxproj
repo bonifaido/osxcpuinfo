@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4736A07194602BF00DFA83E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4736A05194602BF00DFA83E /* InfoPlist.strings */; };
+		B4736A09194602BF00DFA83E /* osxcpuinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = B4736A08194602BF00DFA83E /* osxcpuinfo.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B47369FD194602BF00DFA83E /* osxcpuinfo.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = osxcpuinfo.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4736A01194602BF00DFA83E /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		B4736A04194602BF00DFA83E /* osxcpuinfo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "osxcpuinfo-Info.plist"; sourceTree = "<group>"; };
+		B4736A06194602BF00DFA83E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4736A08194602BF00DFA83E /* osxcpuinfo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = osxcpuinfo.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B47369F8194602BF00DFA83E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B47369F2194602BF00DFA83E = {
+			isa = PBXGroup;
+			children = (
+				B4736A02194602BF00DFA83E /* osxcpuinfo */,
+				B47369FF194602BF00DFA83E /* Frameworks */,
+				B47369FE194602BF00DFA83E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B47369FE194602BF00DFA83E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B47369FD194602BF00DFA83E /* osxcpuinfo.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B47369FF194602BF00DFA83E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4736A00194602BF00DFA83E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4736A00194602BF00DFA83E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4736A01194602BF00DFA83E /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B4736A02194602BF00DFA83E /* osxcpuinfo */ = {
+			isa = PBXGroup;
+			children = (
+				B4736A08194602BF00DFA83E /* osxcpuinfo.c */,
+				B4736A03194602BF00DFA83E /* Supporting Files */,
+			);
+			path = osxcpuinfo;
+			sourceTree = "<group>";
+		};
+		B4736A03194602BF00DFA83E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4736A04194602BF00DFA83E /* osxcpuinfo-Info.plist */,
+				B4736A05194602BF00DFA83E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B47369F9194602BF00DFA83E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B47369FC194602BF00DFA83E /* osxcpuinfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4736A0D194602BF00DFA83E /* Build configuration list for PBXNativeTarget "osxcpuinfo" */;
+			buildPhases = (
+				B47369F7194602BF00DFA83E /* Sources */,
+				B47369F8194602BF00DFA83E /* Frameworks */,
+				B47369F9194602BF00DFA83E /* Headers */,
+				B47369FA194602BF00DFA83E /* Resources */,
+				B47369FB194602BF00DFA83E /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = osxcpuinfo;
+			productName = osxcpuinfo;
+			productReference = B47369FD194602BF00DFA83E /* osxcpuinfo.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B47369F3194602BF00DFA83E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = B47369F6194602BF00DFA83E /* Build configuration list for PBXProject "osxcpuinfo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B47369F2194602BF00DFA83E;
+			productRefGroup = B47369FE194602BF00DFA83E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B47369FC194602BF00DFA83E /* osxcpuinfo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B47369FA194602BF00DFA83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4736A07194602BF00DFA83E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		B47369FB194602BF00DFA83E /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B47369F7194602BF00DFA83E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4736A09194602BF00DFA83E /* osxcpuinfo.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4736A05194602BF00DFA83E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4736A06194602BF00DFA83E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4736A0B194602BF00DFA83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B4736A0C194602BF00DFA83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B4736A0E194602BF00DFA83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "osxcpuinfo/osxcpuinfo-Info.plist";
+				MODULE_NAME = bonifaido.osxcpuinfo;
+				MODULE_START = osxcpuinfo_start;
+				MODULE_STOP = osxcpuinfo_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		B4736A0F194602BF00DFA83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "osxcpuinfo/osxcpuinfo-Info.plist";
+				MODULE_NAME = bonifaido.osxcpuinfo;
+				MODULE_START = osxcpuinfo_start;
+				MODULE_STOP = osxcpuinfo_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B47369F6194602BF00DFA83E /* Build configuration list for PBXProject "osxcpuinfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4736A0B194602BF00DFA83E /* Debug */,
+				B4736A0C194602BF00DFA83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4736A0D194602BF00DFA83E /* Build configuration list for PBXNativeTarget "osxcpuinfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4736A0E194602BF00DFA83E /* Debug */,
+				B4736A0F194602BF00DFA83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B47369F3194602BF00DFA83E /* Project object */;
+}
