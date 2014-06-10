@@ -26,16 +26,16 @@ extern int cpu_number(void);
 
 static void cpuid(int op1, int op2, int *data)
 {
-    asm("cpuid"
-        : "=a" (data[0]), "=b" (data[1]), "=c" (data[2]), "=d" (data[3])
-        : "a"(op1), "c"(op2));
+    asm volatile("cpuid"
+                 : "=a" (data[0]), "=b" (data[1]), "=c" (data[2]), "=d" (data[3])
+                 : "a"(op1), "c"(op2));
 }
 
 static uint64_t rdtsc()
 {
-    unsigned int hi, lo;
-    asm("rdtsc" : "=a" (lo), "=d" (hi));
-    return ((uint64_t)hi << 32) | lo;
+    uint64_t hi, lo;
+    asm volatile("rdtsc" : "=a" (lo), "=d" (hi));
+    return (hi << 32) | lo;
 }
 
 typedef struct
